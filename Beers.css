@@ -1,0 +1,103 @@
+/*CS290 Final Project*/
+/*Author: Jon Moraga*/
+
+.navbar{
+	background-color: rgb(43, 50, 61);
+}
+
+body{
+	background-color: rgb(171, 178, 188) !important;
+}
+
+.row img{
+    width: 100%;
+}
+
+.dropdown-menu{
+	margin: 0 0 0 !important;
+}
+
+p img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.navbar-brand img{
+	width: 60px;
+	height: 60px;
+}
+
+#carouselExampleIndicators{
+	margin: 10px 5% 10px 5%;
+}
+
+nav a{
+	color: #6c757d;
+}
+
+article header{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+}
+
+article p{
+	font-family: 'Roboto', sans-serif;
+}
+
+article{
+	color: rgb(203, 207, 214);
+	padding: 5px 0;
+	border-bottom:1px solid rgb(34, 35, 38);
+	margin: 10px 10% 0 30%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#posts{
+	float: right;
+}
+
+#Me{
+	margin: 0 20px 0 0;
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+#AboutMe{
+	color: white;
+}
+
+.scrollBox{
+	background-color: rgb(172, 173, 175);
+	color: black;
+	overflow: auto;
+	height: 200px;
+	margin: 5px 0 50px 0;
+}
+
+.scrollBox header{
+
+}
+
+.thick{
+    font-weight: bold;
+}
+
+.comment{
+	border-bottom:1px solid rgb(34, 35, 38);
+	margin: 20px 20px;
+	padding: 0 0 20px 0;
+}
+
+.white{
+	color: white;
+}
+
+.imgText{ 
+	color: white;
+	position: absolute; 
+	width: 100%; 
+	bottom: 8px;
+}
