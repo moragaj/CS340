@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Add Review</title>
+	<link rel="stylesheet" type="text/css" href="Beers.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:400,500" rel="stylesheet">
+</head>
+<body>
+	<div id="title" style="display: none;">add_review</div>
+
+	<nav class="navbar navbar-expand-lg navbar-inverse bg-inverse sticky-top">
+		<a class="navbar-brand" href="Beers.html">
+			<img class="rounded-circle" src="logo-placeholder-png-2.png">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item dropdown myDropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Beers
+					</a>
+					<div class="dropdown-menu myDropdown" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="Beers.html">View Beers</a>
+						<a class="dropdown-item" href="Add Beer.html">Add Beer</a>
+						<a class="dropdown-item" href="Update Beer.html">Update Beer</a>
+						<a class="dropdown-item" href="Delete.html">Delete Beer</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown myDropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Breweries
+					</a>
+					<div class="dropdown-menu myDropdown" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="Breweries.html">View Breweries</a>
+						<a class="dropdown-item" href="Add Brewery.html">Add Brewery</a>
+						<a class="dropdown-item" href="Update Brewery.html">Update Brewery</a>
+						<a class="dropdown-item" href="Delete.html">Delete Brewery</a>
+					</div>
+				</li>	      
+
+				<li class="nav-item dropdown myDropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Customers
+					</a>
+					<div class="dropdown-menu myDropdown" aria-labelledby="navbarDropdown2">
+						<a class="dropdown-item" href="Customers.html">View Customers</a>
+						<a class="dropdown-item" href="Add Customer.html">Add Customer</a>
+						<a class="dropdown-item" href="Update Customer.html">Update Customer</a>
+						<a class="dropdown-item" href="Delete.html">Delete Customer</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown myDropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Beer Reviews
+					</a>
+					<div class="dropdown-menu myDropdown" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="Reviews.html">Reviews</a>
+						<a class="dropdown-item" href="Add Review.html">Add Review</a>
+						<a class="dropdown-item" href="Update Review.html">Update Review</a>
+						<a class="dropdown-item" href="Delete.html">Delete Review</a>
+					</div>
+				</li>
+
+		    </ul>
+
+		    <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		</div>
+	</nav>
+
+<div class="container">
+	<h3>New Review</h3>
+	<form>
+
+		<div class="form-row">
+			<div class="form-group col-md-4">
+				<label for="customer_id">Customer ID</label>
+				<select class="form-control" id="customer_id" required>
+				    <option value="">--Customer ID--</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="beer_id">Beer</label>
+				<select class="form-control" id="beer_id" required>
+				    <option value="">--Beer--</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+			  <label for="score">Score</label>
+			  <input type="number" step=0.1 min=0 max=5 class="form-control" id="score" placeholder="Score" required>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<label for="review">Review</label>
+			<textarea class="form-control" rows="3" id="review" placeholder="Review" required></textarea>
+	  	</div>
+
+	  	<br>
+		<button type="submit" class="btn btn-secondary" id="add">Add Review</button>
+	</form>
+</div>
+
+
+<script type="text/javascript" src="beer ajax.js"></script>
+<script src="dropdown.js"></script>
+</body>
+</html>
